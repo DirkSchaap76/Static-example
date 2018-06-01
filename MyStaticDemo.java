@@ -8,6 +8,8 @@ public class MyStaticDemo {
 		MyStaticClass b = new MyStaticClass();
 		MyStaticClass c = new MyStaticClass();
 
+		// by changing these fields for one object, in this case: a, they've been
+		// changed for all other objects as well
 		a.i = 6;
 		a.s = "I have been changed!";
 
@@ -15,6 +17,7 @@ public class MyStaticDemo {
 		System.out.println("b's static fields are: " + b.i + " " + b.s);
 		System.out.println("c's static fields are: " + c.i + " " + c.s);
 
+		// static methods can be called without creating an instance of a class
 		MyStaticClass.myStaticMethod();
 
 	}
